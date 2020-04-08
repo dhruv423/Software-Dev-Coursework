@@ -1,0 +1,228 @@
+\hypertarget{classdate__adt_1_1_date_t}{}\doxysection{date\+\_\+adt.\+DateT Class Reference}
+\label{classdate__adt_1_1_date_t}\index{date\_adt.DateT@{date\_adt.DateT}}
+
+
+An A\+DT that represents Date.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a3ad842fd23b8c4a1f9e65a426d50e3b2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, d, m, y)
+\begin{DoxyCompactList}\small\item\em Constructor that inializes the object with year, month and day. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a8ccbd5257d8a6e79fc67fd6ce6b88766}{day}} (self)
+\begin{DoxyCompactList}\small\item\em Getter for day. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_aad0e41fc53976c15837be62d0f5cbbbf}{month}} (self)
+\begin{DoxyCompactList}\small\item\em Getter for month. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a29a9e1387bbdf0b7d9b36a0d940fd1cc}{year}} (self)
+\begin{DoxyCompactList}\small\item\em Getter for year. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a9d77bfd2612084a826385017cc9d91e7}{next}} (self)
+\begin{DoxyCompactList}\small\item\em Find the next day from the current object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_aaa4e6b382d483a0e263213ce68802f11}{prev}} (self)
+\begin{DoxyCompactList}\small\item\em Find the day before current object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a9c7f4d560a968d5c5e811166eb1dcf55}{before}} (self, d)
+\begin{DoxyCompactList}\small\item\em Finds if the current date is before the d object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a5e8f8b28cc78a795ce6a279dcbc9dbe1}{after}} (self, d)
+\begin{DoxyCompactList}\small\item\em Finds if the current date is after the d object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_acd9b4a721c3ef4629fa056a67af5d79d}{equal}} (self, d)
+\begin{DoxyCompactList}\small\item\em Checks if the dates are the same. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a623101fc17e1006ca1ac2db79b1b25cf}{add\+\_\+days}} (self, n)
+\begin{DoxyCompactList}\small\item\em Adds n days to the current \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classdate__adt_1_1_date_t_a8592c63d42de5e67f5d0502117c4b4e0}{days\+\_\+between}} (self, d)
+\begin{DoxyCompactList}\small\item\em Find the days between the current object and parameter object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a0dea3451e6c975b5afa2369a86d3107c}\label{classdate__adt_1_1_date_t_a0dea3451e6c975b5afa2369a86d3107c}} 
+{\bfseries y}
+\item 
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a55645f4a163d78206f78aea8c889ce0d}\label{classdate__adt_1_1_date_t_a55645f4a163d78206f78aea8c889ce0d}} 
+{\bfseries d}
+\item 
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a9623c910ae1d9ce2e2c93c6b5f343864}\label{classdate__adt_1_1_date_t_a9623c910ae1d9ce2e2c93c6b5f343864}} 
+{\bfseries m}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+DT that represents Date. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a3ad842fd23b8c4a1f9e65a426d50e3b2}\label{classdate__adt_1_1_date_t_a3ad842fd23b8c4a1f9e65a426d50e3b2}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d,  }\item[{}]{m,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor that inializes the object with year, month and day. 
+
+Using a try and except, the inputted date is tested with datetime to see if its valid then save them in class variables else raise error. 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ Month, d -\/ Day, y-\/ Year \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a623101fc17e1006ca1ac2db79b1b25cf}\label{classdate__adt_1_1_date_t_a623101fc17e1006ca1ac2db79b1b25cf}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!add\_days@{add\_days}}
+\index{add\_days@{add\_days}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{add\_days()}{add\_days()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+add\+\_\+days (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+
+
+Adds n days to the current \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object. 
+
+Creates a datetime object with the current object, then uses the timedelta function to add n days and finally extracts the year, month and day. If you enter a decimal number for n it will round to nearest whole number and then add those many days. Accepts negative days (to go back days) 
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ number of days to add on to the current date (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object with the new date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a5e8f8b28cc78a795ce6a279dcbc9dbe1}\label{classdate__adt_1_1_date_t_a5e8f8b28cc78a795ce6a279dcbc9dbe1}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!after@{after}}
+\index{after@{after}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+after (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+Finds if the current date is after the d object. 
+
+Creates a datetime object with current object and a datetime object with the parameter d. Then compare the datetime objects 
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current object is after param d else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a9c7f4d560a968d5c5e811166eb1dcf55}\label{classdate__adt_1_1_date_t_a9c7f4d560a968d5c5e811166eb1dcf55}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!before@{before}}
+\index{before@{before}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+before (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+Finds if the current date is before the d object. 
+
+Creates a datetime object with current object and a datetime object with the parameter d. Then compare the datetime objects 
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current object is before param d else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a8ccbd5257d8a6e79fc67fd6ce6b88766}\label{classdate__adt_1_1_date_t_a8ccbd5257d8a6e79fc67fd6ce6b88766}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!day@{day}}
+\index{day@{day}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{day()}{day()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+day (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter for day. 
+
+\begin{DoxyReturn}{Returns}
+The day as an int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a8592c63d42de5e67f5d0502117c4b4e0}\label{classdate__adt_1_1_date_t_a8592c63d42de5e67f5d0502117c4b4e0}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!days\_between@{days\_between}}
+\index{days\_between@{days\_between}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{days\_between()}{days\_between()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+days\+\_\+between (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+Find the days between the current object and parameter object. 
+
+Creates a datetime object with the current object and a datetime object with the parameter object. Then find the difference between the two dates by subtracting. 
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object find the difference in days from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the absolute value of the difference since the user can enter a date that is before the current date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_acd9b4a721c3ef4629fa056a67af5d79d}\label{classdate__adt_1_1_date_t_acd9b4a721c3ef4629fa056a67af5d79d}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!equal@{equal}}
+\index{equal@{equal}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+equal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+Checks if the dates are the same. 
+
+Compares the day, month and year among the two objects 
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ \mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the date are the same else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_aad0e41fc53976c15837be62d0f5cbbbf}\label{classdate__adt_1_1_date_t_aad0e41fc53976c15837be62d0f5cbbbf}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!month@{month}}
+\index{month@{month}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{month()}{month()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+month (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter for month. 
+
+\begin{DoxyReturn}{Returns}
+The month as an int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a9d77bfd2612084a826385017cc9d91e7}\label{classdate__adt_1_1_date_t_a9d77bfd2612084a826385017cc9d91e7}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!next@{next}}
+\index{next@{next}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+next (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Find the next day from the current object. 
+
+Create a datetime object with current object and use timedelta function to add one day and extract year, month and day \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object of next day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_aaa4e6b382d483a0e263213ce68802f11}\label{classdate__adt_1_1_date_t_aaa4e6b382d483a0e263213ce68802f11}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!prev@{prev}}
+\index{prev@{prev}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+prev (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Find the day before current object. 
+
+Creates a datetime object with current object and use timedelta function to subtract one day and extract year, month, day \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classdate__adt_1_1_date_t}{DateT}} object of the previous day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdate__adt_1_1_date_t_a29a9e1387bbdf0b7d9b36a0d940fd1cc}\label{classdate__adt_1_1_date_t_a29a9e1387bbdf0b7d9b36a0d940fd1cc}} 
+\index{date\_adt.DateT@{date\_adt.DateT}!year@{year}}
+\index{year@{year}!date\_adt.DateT@{date\_adt.DateT}}
+\doxysubsubsection{\texorpdfstring{year()}{year()}}
+{\footnotesize\ttfamily def date\+\_\+adt.\+Date\+T.\+year (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter for year. 
+
+\begin{DoxyReturn}{Returns}
+The year as an int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{date__adt_8py}{date\+\_\+adt.\+py}}\end{DoxyCompactItemize}

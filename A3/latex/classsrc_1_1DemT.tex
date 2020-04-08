@@ -1,0 +1,108 @@
+\hypertarget{classsrc_1_1DemT}{}\doxysection{src.\+DemT Class Reference}
+\label{classsrc_1_1DemT}\index{src.DemT@{src.DemT}}
+
+
+An A\+DT that represents the grid (\mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}}) with type Integer.  
+
+
+
+
+Inheritance diagram for src.\+DemT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classsrc_1_1DemT__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for src.\+DemT\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classsrc_1_1DemT__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1DemT_aae68e4c342c3741ef7e158cfa355c3d3}{DemT}} (Array\+List$<$ Array\+List$<$ Integer $>$$>$ S, double scl)
+\begin{DoxyCompactList}\small\item\em Constructor that creates a new \mbox{\hyperlink{classsrc_1_1DemT}{DemT}} object. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classsrc_1_1DemT_a3b24e7560837afb04f689e8642f9f52f}{total}} ()
+\begin{DoxyCompactList}\small\item\em Method that calculate the total of all the values in all of the cells. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classsrc_1_1DemT_a6fef680b72aa1cb19f0be3530361a266}{max}} ()
+\begin{DoxyCompactList}\small\item\em Method that finds the maximum value in the 2d grid of integers. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1DemT_a070b5fecba62d1eb6f90d465d779e519}{ascending\+Rows}} ()
+\begin{DoxyCompactList}\small\item\em Method to find out if the total in each row is increasing as the row number increases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+DT that represents the grid (\mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}}) with type Integer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1DemT_aae68e4c342c3741ef7e158cfa355c3d3}\label{classsrc_1_1DemT_aae68e4c342c3741ef7e158cfa355c3d3}} 
+\index{src.DemT@{src.DemT}!DemT@{DemT}}
+\index{DemT@{DemT}!src.DemT@{src.DemT}}
+\doxysubsubsection{\texorpdfstring{DemT()}{DemT()}}
+{\footnotesize\ttfamily src.\+Dem\+T.\+DemT (\begin{DoxyParamCaption}\item[{Array\+List$<$ Array\+List$<$ Integer $>$$>$}]{S,  }\item[{double}]{scl }\end{DoxyParamCaption})}
+
+
+
+Constructor that creates a new \mbox{\hyperlink{classsrc_1_1DemT}{DemT}} object. 
+
+Same exceptions as \mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}} apply here, using super to call the parent constructor 
+\begin{DoxyParams}{Parameters}
+{\em S} & The Array\+List in a Arraylist of type Integer \\
+\hline
+{\em scl} & type double, scale -\/ length of each side of each cell in the grid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1DemT_a070b5fecba62d1eb6f90d465d779e519}\label{classsrc_1_1DemT_a070b5fecba62d1eb6f90d465d779e519}} 
+\index{src.DemT@{src.DemT}!ascendingRows@{ascendingRows}}
+\index{ascendingRows@{ascendingRows}!src.DemT@{src.DemT}}
+\doxysubsubsection{\texorpdfstring{ascendingRows()}{ascendingRows()}}
+{\footnotesize\ttfamily boolean src.\+Dem\+T.\+ascending\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to find out if the total in each row is increasing as the row number increases. 
+
+If num of rows is 1, then its not ascending. \begin{DoxyReturn}{Returns}
+True if the rows are ascending else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1DemT_a6fef680b72aa1cb19f0be3530361a266}\label{classsrc_1_1DemT_a6fef680b72aa1cb19f0be3530361a266}} 
+\index{src.DemT@{src.DemT}!max@{max}}
+\index{max@{max}!src.DemT@{src.DemT}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily Integer src.\+Dem\+T.\+max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that finds the maximum value in the 2d grid of integers. 
+
+Loop over the number of rows and number of columns, make a new pointT and use the get method to find value and compare it with the current max \begin{DoxyReturn}{Returns}
+Integer -\/ maximum value in the grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1DemT_a3b24e7560837afb04f689e8642f9f52f}\label{classsrc_1_1DemT_a3b24e7560837afb04f689e8642f9f52f}} 
+\index{src.DemT@{src.DemT}!total@{total}}
+\index{total@{total}!src.DemT@{src.DemT}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily Integer src.\+Dem\+T.\+total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that calculate the total of all the values in all of the cells. 
+
+Loop over the number of rows and number of columns, make a new pointT and use the get method to find value \begin{DoxyReturn}{Returns}
+Integer -\/ total of all cells\textquotesingle{} values 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Dem\+T.\+java\end{DoxyCompactItemize}

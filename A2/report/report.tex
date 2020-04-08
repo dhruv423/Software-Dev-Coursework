@@ -1,0 +1,160 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+
+\oddsidemargin 0mm
+\evensidemargin 0mm
+\textwidth 160mm
+\textheight 200mm
+
+\pagestyle {plain}
+\pagenumbering{arabic}
+
+\newcounter{stepnum}
+
+\title{Assignment 2 Solution}
+\author{Dhruv Bhavsar, bhavsd1}
+\date{\today}
+
+\begin {document}
+
+\maketitle
+
+This report discusses the testing results for all the modules written such as ReactionT, CompoundT, etc. for Assignment 2. It also includes the test results of partner's code for these programs. I also discuss the quality of the given specifications and answer the given discussion questions.
+
+\section{Testing of the Original Program}
+ For this assignment, the tests were written in pytest, an unit testing framework for python. What I noticed from my last assignment's test driver (without using pytest) and pytest, is that they both behaved and worked in the same fashion. Though, pytest is much easier better to use since it provides coverage analysis on your code which is really helpful since it tells you how much of the module you have tested thus far. For my test cases, I made my compounds and reactions have a matrix that is not n x n to ensure that the method works for all matrices. I also included a test case that does not have a solution, to ensure that my program throws an ValueError just like it was mentioned in the specifications. So my test file had 52 tests and I was able to pass all of them. As usual, testing the program helped me find errors in my code. 
+
+\section{Results of Testing Partner's Code}
+When running my test driver against my partners code, I came across with 5 tests failed out of the 52 tests I have. They passed 47 tests. Upon further examination of the fails, I found out that my partners answers were right but they weren't in integers as they were in real numbers. For my ReactionT I was able to find a way to convert my real numbers into equivalent integer form. So my partner did pass those test cases, I should have included an equivalent calculator function in my code to able to compare two equivalent numbers. The other 3 errors were about checking if two elm sets are equal. At first I was really confused on why this error occurred.  But after carefully going through the code for Set, I found that they used == in the member function, which is not correct. If they use ==, they should have included eq function in MoleculeT in order for == to work correctly. Right now it is comparing memory address with a Set. With the last assignment, my partner had one mistake with their code, adding an extra day in between the days. It was a minor error with his code. Same thing for this assignment, all they need to do is add the eq function in MoleculeT. When I added the eq function, all the tests passed (except the coeffs test but it was different equivalent form).
+
+\section{Critique of Given Design Specification}
+The specifications for the this assignment was given by mathematical notations, which in my opinion is much more concrete than specifications given in natural language. Though it can be hard to understand the meaning of the function with mathematical notation as it can get very complex quick. One of the strengths of this design is its high cohesion between modules. Components are very closely related as most of them use each other. This design is opaque as it uses information hiding to hide calculations in the \textbf{ReactionT} module especially.
+
+\section{Answers}
+
+\begin{enumerate}[a)]
+
+\item As I mentioned before natural language in the specification for A1 was somewhat ambiguous in some aspects and the formal specification is more concrete in terms what it wants you to implement. The advantage of natural language specification is that it is much easier to understand what you need to do for the method. However it can be ambiguous in terms of implementation. Formal specification provides more concrete implementations but can be tricky to decipher.
+
+\item The process of converting the strings to logical syntactic components is called parsing. You convert the string that is inputted into the respective Element by some sort of matching of strings. I think I would need to include a module named Parser that is responsible for parsing the string into an appropriate type/object. It will be stored in an array of strings, then iterate over the array and create the corresponding object of the molecule.
+
+\item To calculate the atomic mass of the elements, compounds and reactions just add an extra field with the Element types that holds the mass of the element. Then make a function that goes through the list or set just like how num atoms works and sum up the mass based on the element and the number of atoms for respective element.
+
+\item In usual chemistry, coefficients are not decimal numbers they are whole numbers. An algorithm to ensure the coefficients are whole numbers can be found in my \textbf{ReactionT}. The code for ReactionT was inspired from this \url{https://stackoverflow.com/questions/42637872/solve-system-of-linear-integer-equations-in-python}.
+
+\item The difference between static typing and dynamic typing is that static you have to be explicit on what type you are using whereas with dynamic typing you don't need to declare the type, it will automatically interpret what type you need. The advantage of dynamic typing is that you don't need a generic type as generic type is the same thing as you declare it for a specific type. The disadvantage is that it might cause run time errors with the mismatch types. The advantage of static typing is that large amount of errors can be caught before runtime as there will be a type mismatch error. The disadvantage of static typing is that it can hold up rapid development as you have to be constantly worried about the correct types. Source: \url{quora.com/What-are-the-pros-and-cons-and-needs-for-static-dynamic-type-checker-or-both}
+
+\item \texttt{[(i, i+2) for i in range(10) if not(i\%2==0)]}
+
+\item def len(n): return sum(list(map(lambda x: 1, n)))
+
+\item Interface is defined to be a contract between the system and the environment. The interface informally describes what can pass between the system and environment. The implementation is defined as the implementation of the interface.
+
+\item
+\begin{enumerate}[i)]
+
+\item Abstraction is the process of focussing on the important details instead of worrying about the irrelevant details.
+
+\item Anticipation of change is programming based on knowing that a change can arise and your program must be able to change as requirements and such change.
+
+\item Generality is solving a general problem than a really specific problem. This is important in software engineering because you can now use that general solution for many more problems.
+
+\item Modularity is when a complex system is broken down into smaller less complex systems and you work your way bottom up.
+
+\item Seperation of concerns is the principle of concerns being seperated and considered independently.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+\lstset{language=Python, basicstyle=\tiny, breaklines=true, showspaces=false,
+  showstringspaces=false, breakatwhitespace=true}
+%\lstset{language=C,linewidth=.94\textwidth,xleftmargin=1.1cm}
+
+\def\thesection{\Alph{section}}
+
+\section{Code for ChemTypes.py}
+
+\noindent \lstinputlisting{../src/ChemTypes.py}
+
+\newpage
+
+\section{Code for ChemEntity.py}
+
+\noindent \lstinputlisting{../src/ChemEntity.py}
+
+\newpage
+
+\section{Code for Equality.py}
+
+\noindent \lstinputlisting{../src/Equality.py}
+
+\newpage
+
+\section{Code for Set.py}
+
+\noindent \lstinputlisting{../src/Set.py}
+
+\newpage
+
+\section{Code for ElmSet.py}
+
+\noindent \lstinputlisting{../src/ElmSet.py}
+
+\newpage
+
+\section{Code for MolecSet.py}
+
+\noindent \lstinputlisting{../src/MolecSet.py}
+
+\newpage
+
+\section{Code for CompoundT.py}
+
+\noindent \lstinputlisting{../src/CompoundT.py}
+
+\newpage
+
+\section{Code for ReactionT.py}
+
+\noindent \lstinputlisting{../src/ReactionT.py}
+
+\newpage
+
+\section{Code for test\_All.py}
+
+\noindent \lstinputlisting{../src/test_All.py}
+
+\newpage
+
+\section{Code for Partner's Set.py}
+
+\noindent \lstinputlisting{../partner/Set.py}
+
+\newpage
+
+\section{Code for Partner's MoleculeT.py}
+
+\noindent \lstinputlisting{../partner/MoleculeT.py}
+
+\newpage
+
+\section{Code for Partner's CompoundT.py}
+
+\noindent \lstinputlisting{../partner/CompoundT.py}
+
+\newpage
+
+\section{Code for Partner's ReactionT.py}
+
+\noindent \lstinputlisting{../partner/ReactionT.py}
+
+\end {document}

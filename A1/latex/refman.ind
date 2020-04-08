@@ -1,0 +1,99 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {date\_adt.DateT}, \hyperpage{6}
+    \subitem {pos\_adt.GPosT}, \hyperpage{11}
+
+  \indexspace
+
+  \item {add\_days}
+    \subitem {date\_adt.DateT}, \hyperpage{6}
+  \item {after}
+    \subitem {date\_adt.DateT}, \hyperpage{7}
+  \item {arrival\_date}
+    \subitem {pos\_adt.GPosT}, \hyperpage{11}
+
+  \indexspace
+
+  \item {before}
+    \subitem {date\_adt.DateT}, \hyperpage{7}
+
+  \indexspace
+
+  \item {date\_adt.DateT}, \hyperpage{5}
+    \subitem {\_\_init\_\_}, \hyperpage{6}
+    \subitem {add\_days}, \hyperpage{6}
+    \subitem {after}, \hyperpage{7}
+    \subitem {before}, \hyperpage{7}
+    \subitem {day}, \hyperpage{7}
+    \subitem {days\_between}, \hyperpage{8}
+    \subitem {equal}, \hyperpage{8}
+    \subitem {month}, \hyperpage{9}
+    \subitem {next}, \hyperpage{9}
+    \subitem {prev}, \hyperpage{9}
+    \subitem {year}, \hyperpage{9}
+  \item {day}
+    \subitem {date\_adt.DateT}, \hyperpage{7}
+  \item {days\_between}
+    \subitem {date\_adt.DateT}, \hyperpage{8}
+  \item {distance}
+    \subitem {pos\_adt.GPosT}, \hyperpage{11}
+
+  \indexspace
+
+  \item {equal}
+    \subitem {date\_adt.DateT}, \hyperpage{8}
+    \subitem {pos\_adt.GPosT}, \hyperpage{12}
+
+  \indexspace
+
+  \item {lat}
+    \subitem {pos\_adt.GPosT}, \hyperpage{12}
+  \item {long}
+    \subitem {pos\_adt.GPosT}, \hyperpage{12}
+
+  \indexspace
+
+  \item {month}
+    \subitem {date\_adt.DateT}, \hyperpage{9}
+  \item {move}
+    \subitem {pos\_adt.GPosT}, \hyperpage{12}
+
+  \indexspace
+
+  \item {next}
+    \subitem {date\_adt.DateT}, \hyperpage{9}
+  \item {north\_of}
+    \subitem {pos\_adt.GPosT}, \hyperpage{13}
+
+  \indexspace
+
+  \item {pos\_adt.GPosT}, \hyperpage{10}
+    \subitem {\_\_init\_\_}, \hyperpage{11}
+    \subitem {arrival\_date}, \hyperpage{11}
+    \subitem {distance}, \hyperpage{11}
+    \subitem {equal}, \hyperpage{12}
+    \subitem {lat}, \hyperpage{12}
+    \subitem {long}, \hyperpage{12}
+    \subitem {move}, \hyperpage{12}
+    \subitem {north\_of}, \hyperpage{13}
+    \subitem {west\_of}, \hyperpage{13}
+  \item {prev}
+    \subitem {date\_adt.DateT}, \hyperpage{9}
+
+  \indexspace
+
+  \item {src/date\_adt.py}, \hyperpage{15}
+  \item {src/pos\_adt.py}, \hyperpage{15}
+
+  \indexspace
+
+  \item {west\_of}
+    \subitem {pos\_adt.GPosT}, \hyperpage{13}
+
+  \indexspace
+
+  \item {year}
+    \subitem {date\_adt.DateT}, \hyperpage{9}
+
+\end{theindex}

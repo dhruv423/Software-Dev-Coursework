@@ -1,0 +1,120 @@
+\begin{theindex}
+
+  \item {\_\_elm\_in\_chem\_eq\_\_}
+    \subitem {ReactionT.ReactionT}, \hyperpage{20}
+  \item {\_\_eq\_\_}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{16}
+  \item {\_\_init\_\_}
+    \subitem {CompoundT.CompoundT}, \hyperpage{8}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{16}
+    \subitem {ReactionT.ReactionT}, \hyperpage{19}
+    \subitem {Set.Set}, \hyperpage{22}
+
+  \indexspace
+
+  \item {add}
+    \subitem {Set.Set}, \hyperpage{22}
+
+  \indexspace
+
+  \item {ChemEntity.ChemEntity}, \hyperpage{7}
+    \subitem {num\_atoms}, \hyperpage{7}
+  \item {ChemTypes.ElementT}, \hyperpage{10}
+  \item {CompoundT.CompoundT}, \hyperpage{8}
+    \subitem {\_\_init\_\_}, \hyperpage{8}
+    \subitem {constit\_elems}, \hyperpage{9}
+    \subitem {equals}, \hyperpage{9}
+    \subitem {get\_molec\_set}, \hyperpage{9}
+    \subitem {num\_atoms}, \hyperpage{10}
+  \item {constit\_elems}
+    \subitem {CompoundT.CompoundT}, \hyperpage{9}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{17}
+
+  \indexspace
+
+  \item {ElmSet.ElmSet}, \hyperpage{13}
+  \item {Equality.Equality}, \hyperpage{14}
+    \subitem {equals}, \hyperpage{14}
+  \item {equals}
+    \subitem {CompoundT.CompoundT}, \hyperpage{9}
+    \subitem {Equality.Equality}, \hyperpage{14}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{17}
+    \subitem {Set.Set}, \hyperpage{23}
+
+  \indexspace
+
+  \item {get\_elm}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{18}
+  \item {get\_lhs}
+    \subitem {ReactionT.ReactionT}, \hyperpage{20}
+  \item {get\_lhs\_coeff}
+    \subitem {ReactionT.ReactionT}, \hyperpage{20}
+  \item {get\_molec\_set}
+    \subitem {CompoundT.CompoundT}, \hyperpage{9}
+  \item {get\_num}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{18}
+  \item {get\_rhs}
+    \subitem {ReactionT.ReactionT}, \hyperpage{20}
+  \item {get\_rhs\_coeff}
+    \subitem {ReactionT.ReactionT}, \hyperpage{21}
+
+  \indexspace
+
+  \item {member}
+    \subitem {Set.Set}, \hyperpage{23}
+  \item {MolecSet.MolecSet}, \hyperpage{15}
+  \item {MoleculeT.MoleculeT}, \hyperpage{15}
+    \subitem {\_\_eq\_\_}, \hyperpage{16}
+    \subitem {\_\_init\_\_}, \hyperpage{16}
+    \subitem {constit\_elems}, \hyperpage{17}
+    \subitem {equals}, \hyperpage{17}
+    \subitem {get\_elm}, \hyperpage{18}
+    \subitem {get\_num}, \hyperpage{18}
+    \subitem {num\_atoms}, \hyperpage{18}
+
+  \indexspace
+
+  \item {num\_atoms}
+    \subitem {ChemEntity.ChemEntity}, \hyperpage{7}
+    \subitem {CompoundT.CompoundT}, \hyperpage{10}
+    \subitem {MoleculeT.MoleculeT}, \hyperpage{18}
+
+  \indexspace
+
+  \item {ReactionT.ReactionT}, \hyperpage{19}
+    \subitem {\_\_elm\_in\_chem\_eq\_\_}, \hyperpage{20}
+    \subitem {\_\_init\_\_}, \hyperpage{19}
+    \subitem {get\_lhs}, \hyperpage{20}
+    \subitem {get\_lhs\_coeff}, \hyperpage{20}
+    \subitem {get\_rhs}, \hyperpage{20}
+    \subitem {get\_rhs\_coeff}, \hyperpage{21}
+  \item {rm}
+    \subitem {Set.Set}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Set.Set}, \hyperpage{21}
+    \subitem {\_\_init\_\_}, \hyperpage{22}
+    \subitem {add}, \hyperpage{22}
+    \subitem {equals}, \hyperpage{23}
+    \subitem {member}, \hyperpage{23}
+    \subitem {rm}, \hyperpage{23}
+    \subitem {size}, \hyperpage{24}
+    \subitem {to\_seq}, \hyperpage{24}
+  \item {size}
+    \subitem {Set.Set}, \hyperpage{24}
+  \item {src/ChemEntity.py}, \hyperpage{25}
+  \item {src/ChemTypes.py}, \hyperpage{25}
+  \item {src/CompoundT.py}, \hyperpage{26}
+  \item {src/Equality.py}, \hyperpage{26}
+  \item {src/MolecSet.py}, \hyperpage{27}
+  \item {src/MoleculeT.py}, \hyperpage{27}
+  \item {src/ReactionT.py}, \hyperpage{28}
+  \item {src/Set.py}, \hyperpage{28}
+
+  \indexspace
+
+  \item {to\_seq}
+    \subitem {Set.Set}, \hyperpage{24}
+
+\end{theindex}

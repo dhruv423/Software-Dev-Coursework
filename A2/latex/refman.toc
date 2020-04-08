@@ -1,0 +1,80 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Chem\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Entity.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Chem\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Entity Class Reference}{7}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Member Function Documentation}{7}{subsection.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.1.1.1}num\_atoms()}{7}{subsubsection.4.1.1.1}% 
+\contentsline {section}{\numberline {4.2}Compound\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}CompoundT Class Reference}{8}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{8}{subsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}\_\_init\_\_()}{8}{subsubsection.4.2.2.1}% 
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{9}{subsection.4.2.3}% 
+\contentsline {subsubsection}{\numberline {4.2.3.1}constit\_elems()}{9}{subsubsection.4.2.3.1}% 
+\contentsline {subsubsection}{\numberline {4.2.3.2}equals()}{9}{subsubsection.4.2.3.2}% 
+\contentsline {subsubsection}{\numberline {4.2.3.3}get\_molec\_set()}{10}{subsubsection.4.2.3.3}% 
+\contentsline {subsubsection}{\numberline {4.2.3.4}num\_atoms()}{10}{subsubsection.4.2.3.4}% 
+\contentsline {section}{\numberline {4.3}Chem\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Types.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ElementT Class Reference}{10}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{13}{subsection.4.3.1}% 
+\contentsline {section}{\numberline {4.4}Elm\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elm\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set Class Reference}{13}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{13}{subsection.4.4.1}% 
+\contentsline {section}{\numberline {4.5}Equality.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Equality Class Reference}{14}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{14}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{14}{subsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.2.1}equals()}{14}{subsubsection.4.5.2.1}% 
+\contentsline {section}{\numberline {4.6}Molec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Molec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set Class Reference}{15}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{15}{subsection.4.6.1}% 
+\contentsline {section}{\numberline {4.7}Molecule\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}MoleculeT Class Reference}{15}{section.4.7}% 
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{16}{subsection.4.7.1}% 
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{16}{subsection.4.7.2}% 
+\contentsline {subsubsection}{\numberline {4.7.2.1}\_\_init\_\_()}{16}{subsubsection.4.7.2.1}% 
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{16}{subsection.4.7.3}% 
+\contentsline {subsubsection}{\numberline {4.7.3.1}\_\_eq\_\_()}{16}{subsubsection.4.7.3.1}% 
+\contentsline {subsubsection}{\numberline {4.7.3.2}constit\_elems()}{17}{subsubsection.4.7.3.2}% 
+\contentsline {subsubsection}{\numberline {4.7.3.3}equals()}{17}{subsubsection.4.7.3.3}% 
+\contentsline {subsubsection}{\numberline {4.7.3.4}get\_elm()}{18}{subsubsection.4.7.3.4}% 
+\contentsline {subsubsection}{\numberline {4.7.3.5}get\_num()}{18}{subsubsection.4.7.3.5}% 
+\contentsline {subsubsection}{\numberline {4.7.3.6}num\_atoms()}{18}{subsubsection.4.7.3.6}% 
+\contentsline {section}{\numberline {4.8}Reaction\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ReactionT Class Reference}{19}{section.4.8}% 
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{19}{subsection.4.8.1}% 
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{19}{subsection.4.8.2}% 
+\contentsline {subsubsection}{\numberline {4.8.2.1}\_\_init\_\_()}{19}{subsubsection.4.8.2.1}% 
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{20}{subsection.4.8.3}% 
+\contentsline {subsubsection}{\numberline {4.8.3.1}\_\_elm\_in\_chem\_eq\_\_()}{20}{subsubsection.4.8.3.1}% 
+\contentsline {subsubsection}{\numberline {4.8.3.2}get\_lhs()}{20}{subsubsection.4.8.3.2}% 
+\contentsline {subsubsection}{\numberline {4.8.3.3}get\_lhs\_coeff()}{20}{subsubsection.4.8.3.3}% 
+\contentsline {subsubsection}{\numberline {4.8.3.4}get\_rhs()}{21}{subsubsection.4.8.3.4}% 
+\contentsline {subsubsection}{\numberline {4.8.3.5}get\_rhs\_coeff()}{21}{subsubsection.4.8.3.5}% 
+\contentsline {section}{\numberline {4.9}Set.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set Class Reference}{21}{section.4.9}% 
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{22}{subsection.4.9.1}% 
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{22}{subsection.4.9.2}% 
+\contentsline {subsubsection}{\numberline {4.9.2.1}\_\_init\_\_()}{22}{subsubsection.4.9.2.1}% 
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{22}{subsection.4.9.3}% 
+\contentsline {subsubsection}{\numberline {4.9.3.1}add()}{22}{subsubsection.4.9.3.1}% 
+\contentsline {subsubsection}{\numberline {4.9.3.2}equals()}{23}{subsubsection.4.9.3.2}% 
+\contentsline {subsubsection}{\numberline {4.9.3.3}member()}{23}{subsubsection.4.9.3.3}% 
+\contentsline {subsubsection}{\numberline {4.9.3.4}rm()}{24}{subsubsection.4.9.3.4}% 
+\contentsline {subsubsection}{\numberline {4.9.3.5}size()}{24}{subsubsection.4.9.3.5}% 
+\contentsline {subsubsection}{\numberline {4.9.3.6}to\_seq()}{24}{subsubsection.4.9.3.6}% 
+\contentsline {chapter}{\numberline {5}File Documentation}{25}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Chem\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Entity.py File Reference}{25}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{25}{subsection.5.1.1}% 
+\contentsline {section}{\numberline {5.2}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Chem\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Types.py File Reference}{25}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{26}{subsection.5.2.1}% 
+\contentsline {section}{\numberline {5.3}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}CompoundT.py File Reference}{26}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{26}{subsection.5.3.1}% 
+\contentsline {section}{\numberline {5.4}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Equality.py File Reference}{26}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{27}{subsection.5.4.1}% 
+\contentsline {section}{\numberline {5.5}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Molec\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.py File Reference}{27}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{27}{subsection.5.5.1}% 
+\contentsline {section}{\numberline {5.6}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}MoleculeT.py File Reference}{27}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{27}{subsection.5.6.1}% 
+\contentsline {section}{\numberline {5.7}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ReactionT.py File Reference}{28}{section.5.7}% 
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{28}{subsection.5.7.1}% 
+\contentsline {section}{\numberline {5.8}src/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.py File Reference}{28}{section.5.8}% 
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{28}{subsection.5.8.1}% 
+\contentsline {chapter}{Index}{29}{section*.26}% 

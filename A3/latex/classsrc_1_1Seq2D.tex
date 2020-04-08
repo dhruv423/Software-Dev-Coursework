@@ -1,0 +1,196 @@
+\hypertarget{classsrc_1_1Seq2D}{}\doxysection{src.\+Seq2D$<$ T $>$ Class Template Reference}
+\label{classsrc_1_1Seq2D}\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+
+
+An A\+DT that represents a matrix.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1Seq2D_ac828040ab1a0eaef99de681ef97afb96}{Seq2D}} (Array\+List$<$ Array\+List$<$ T $>$$>$ S, double scl)
+\begin{DoxyCompactList}\small\item\em Constructor to create a new \mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}}, number of columns must be the same for each row. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1Seq2D_aa1fe7fa6ac8baa540987d21e1a3f3850}{set}} (\mbox{\hyperlink{classsrc_1_1PointT}{PointT}} p, T v)
+\begin{DoxyCompactList}\small\item\em Method to set a specific element in the sequence to a value given by the parameter,. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classsrc_1_1Seq2D_a908df6c1ee83cae03d7d80bf08d4712d}{get}} (\mbox{\hyperlink{classsrc_1_1PointT}{PointT}} p)
+\begin{DoxyCompactList}\small\item\em Method to get the value at the specified index by a \mbox{\hyperlink{classsrc_1_1PointT}{PointT}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1Seq2D_ade9617d0b5682c19571a24cc6dfa1298}{get\+Num\+Row}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the number of rows in the sequence. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1Seq2D_a72820bfa415217932446d1f0db50837d}{get\+Num\+Col}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the number of columns in the sequence. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classsrc_1_1Seq2D_ae4fd5146afbd2b7331bbed4d607a612e}{get\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Getter to get the scale. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1Seq2D_a119d1a328b793828f1911e788678ff29}{count}} (T t)
+\begin{DoxyCompactList}\small\item\em Method to find out how many times a value exists in the sequence. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1Seq2D_a1d45447f545edb9dbd5900be3e26e2de}{count\+Row}} (T t, int i)
+\begin{DoxyCompactList}\small\item\em Method to count how many times the value t appears in row i. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classsrc_1_1Seq2D_a40c300af9bdda040aefd7ddcec899a29}{area}} (T t)
+\begin{DoxyCompactList}\small\item\em Method to calculate the total area in the grid taken up by cell value t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+DT that represents a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & Type T for generality \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_ac828040ab1a0eaef99de681ef97afb96}\label{classsrc_1_1Seq2D_ac828040ab1a0eaef99de681ef97afb96}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!Seq2D@{Seq2D}}
+\index{Seq2D@{Seq2D}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Seq2D()}{Seq2D()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.\mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}} (\begin{DoxyParamCaption}\item[{Array\+List$<$ Array\+List$<$ T $>$$>$}]{S,  }\item[{double}]{scl }\end{DoxyParamCaption})}
+
+
+
+Constructor to create a new \mbox{\hyperlink{classsrc_1_1Seq2D}{Seq2D}}, number of columns must be the same for each row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Arraylist of Arraylist, cannot be empty else exception is thrown \\
+\hline
+{\em scl} & Scale, cannot be less than 0 else exception is thrown \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_a40c300af9bdda040aefd7ddcec899a29}\label{classsrc_1_1Seq2D_a40c300af9bdda040aefd7ddcec899a29}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!area@{area}}
+\index{area@{area}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.area (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})}
+
+
+
+Method to calculate the total area in the grid taken up by cell value t. 
+
+The length of each side of each cell is the scale hence the scale squared 
+\begin{DoxyParams}{Parameters}
+{\em t} & cell value to look for, type T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+area type double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_a119d1a328b793828f1911e788678ff29}\label{classsrc_1_1Seq2D_a119d1a328b793828f1911e788678ff29}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!count@{count}}
+\index{count@{count}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.count (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})}
+
+
+
+Method to find out how many times a value exists in the sequence. 
+
+Loop over each row and call the count\+Row method to find the total count in that row 
+\begin{DoxyParams}{Parameters}
+{\em t} & Type T, the value to find in the sequence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+count Type int indicating how many times it appeared 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_a1d45447f545edb9dbd5900be3e26e2de}\label{classsrc_1_1Seq2D_a1d45447f545edb9dbd5900be3e26e2de}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!countRow@{countRow}}
+\index{countRow@{countRow}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{countRow()}{countRow()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.count\+Row (\begin{DoxyParamCaption}\item[{T}]{t,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Method to count how many times the value t appears in row i. 
+
+Check if the inputed row number is valid, loop over all the elements in the ith arraylist 
+\begin{DoxyParams}{Parameters}
+{\em t} & Type T, value to check \\
+\hline
+{\em i} & int row number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+count -\/ number of occurences 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_a908df6c1ee83cae03d7d80bf08d4712d}\label{classsrc_1_1Seq2D_a908df6c1ee83cae03d7d80bf08d4712d}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!get@{get}}
+\index{get@{get}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1PointT}{PointT}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Method to get the value at the specified index by a \mbox{\hyperlink{classsrc_1_1PointT}{PointT}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{classsrc_1_1PointT}{PointT}}, the specific index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of whats in the index Type T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_a72820bfa415217932446d1f0db50837d}\label{classsrc_1_1Seq2D_a72820bfa415217932446d1f0db50837d}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!getNumCol@{getNumCol}}
+\index{getNumCol@{getNumCol}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getNumCol()}{getNumCol()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.get\+Num\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the number of columns in the sequence. 
+
+\begin{DoxyReturn}{Returns}
+int value of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_ade9617d0b5682c19571a24cc6dfa1298}\label{classsrc_1_1Seq2D_ade9617d0b5682c19571a24cc6dfa1298}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!getNumRow@{getNumRow}}
+\index{getNumRow@{getNumRow}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getNumRow()}{getNumRow()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.get\+Num\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the number of rows in the sequence. 
+
+\begin{DoxyReturn}{Returns}
+int value of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_ae4fd5146afbd2b7331bbed4d607a612e}\label{classsrc_1_1Seq2D_ae4fd5146afbd2b7331bbed4d607a612e}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!getScale@{getScale}}
+\index{getScale@{getScale}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily double \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter to get the scale. 
+
+\begin{DoxyReturn}{Returns}
+double value of scale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsrc_1_1Seq2D_aa1fe7fa6ac8baa540987d21e1a3f3850}\label{classsrc_1_1Seq2D_aa1fe7fa6ac8baa540987d21e1a3f3850}} 
+\index{src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}!set@{set}}
+\index{set@{set}!src.Seq2D$<$ T $>$@{src.Seq2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classsrc_1_1Seq2D}{src.\+Seq2D}}$<$ T $>$.set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1PointT}{PointT}}}]{p,  }\item[{T}]{v }\end{DoxyParamCaption})}
+
+
+
+Method to set a specific element in the sequence to a value given by the parameter,. 
+
+if point doesn\textquotesingle{}t exist in the sequence exception thrown Index\+Outof\+Bounds 
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{classsrc_1_1PointT}{PointT}}, the specific element in the sequence \\
+\hline
+{\em v} & Type T, Set the element to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Seq2\+D.\+java\end{DoxyCompactItemize}

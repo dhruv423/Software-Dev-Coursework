@@ -1,0 +1,167 @@
+\hypertarget{class_molecule_t_1_1_molecule_t}{}\doxysection{Molecule\+T.\+MoleculeT Class Reference}
+\label{class_molecule_t_1_1_molecule_t}\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+
+
+Class that represents a molecule, inherits Chem\+Entity and Equality.  
+
+
+Inheritance diagram for Molecule\+T.\+MoleculeT\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_molecule_t_1_1_molecule_t}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_ac683639b16b3a0b08dcbe1cea34219f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, num, elm)
+\begin{DoxyCompactList}\small\item\em Constructor that intializes a Molecule with element and number of those element. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_aa5fdef4c8dd1ecc2e9b5f3aa2f75fc14}{get\+\_\+num}} (self)
+\begin{DoxyCompactList}\small\item\em Get the number of atoms in the molecule. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_abbe406e714ffc5970f464a765864b080}{get\+\_\+elm}} (self)
+\begin{DoxyCompactList}\small\item\em Get the element. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_aada229d4b4bbce21663a695b6a934643}{num\+\_\+atoms}} (self, element)
+\begin{DoxyCompactList}\small\item\em Return the number of atom in the Molecule. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_acb8bc92d7ff08433616ad374e72b1217}{constit\+\_\+elems}} (self)
+\begin{DoxyCompactList}\small\item\em Return the element in a Elm\+Set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_a3e01b813f2944851b1926ab545f6a5a2}{equals}} (self, other\+\_\+m)
+\begin{DoxyCompactList}\small\item\em Check if the other \mbox{\hyperlink{class_molecule_t_1_1_molecule_t}{MoleculeT}} is the same as current object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_molecule_t_1_1_molecule_t_a25a93b86c04c40b2c05070d0ceec560c}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\begin{DoxyCompactList}\small\item\em The default equals for Python. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_a3dcb49ddbc4713d976628b03257511b7}\label{class_molecule_t_1_1_molecule_t_a3dcb49ddbc4713d976628b03257511b7}} 
+def {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a molecule, inherits Chem\+Entity and Equality. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_ac683639b16b3a0b08dcbe1cea34219f2}\label{class_molecule_t_1_1_molecule_t_ac683639b16b3a0b08dcbe1cea34219f2}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num,  }\item[{}]{elm }\end{DoxyParamCaption})}
+
+
+
+Constructor that intializes a Molecule with element and number of those element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & -\/ number of element in that molecule, elm -\/ ElementT \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_a25a93b86c04c40b2c05070d0ceec560c}\label{class_molecule_t_1_1_molecule_t_a25a93b86c04c40b2c05070d0ceec560c}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+
+
+The default equals for Python. 
+
+But we don\textquotesingle{}t want that we want to use our equals method 
+\begin{DoxyParams}{Parameters}
+{\em Other} & -\/ \mbox{\hyperlink{class_molecule_t_1_1_molecule_t}{MoleculeT}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of our equals method 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_acb8bc92d7ff08433616ad374e72b1217}\label{class_molecule_t_1_1_molecule_t_acb8bc92d7ff08433616ad374e72b1217}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!constit\_elems@{constit\_elems}}
+\index{constit\_elems@{constit\_elems}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{constit\_elems()}{constit\_elems()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+constit\+\_\+elems (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the element in a Elm\+Set. 
+
+\begin{DoxyReturn}{Returns}
+Elm\+Set of the element 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_chem_entity_1_1_chem_entity}{Chem\+Entity.\+Chem\+Entity}}.
+
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_a3e01b813f2944851b1926ab545f6a5a2}\label{class_molecule_t_1_1_molecule_t_a3e01b813f2944851b1926ab545f6a5a2}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!equals@{equals}}
+\index{equals@{equals}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+equals (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other\+\_\+m }\end{DoxyParamCaption})}
+
+
+
+Check if the other \mbox{\hyperlink{class_molecule_t_1_1_molecule_t}{MoleculeT}} is the same as current object. 
+
+Checking by if it is the same ElementT and same number of atoms 
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+m} & -\/ \mbox{\hyperlink{class_molecule_t_1_1_molecule_t}{MoleculeT}} to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the same else False 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_equality_1_1_equality_a2ac78a997d8577962d129d1fbbae81a2}{Equality.\+Equality}}.
+
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_abbe406e714ffc5970f464a765864b080}\label{class_molecule_t_1_1_molecule_t_abbe406e714ffc5970f464a765864b080}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!get\_elm@{get\_elm}}
+\index{get\_elm@{get\_elm}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{get\_elm()}{get\_elm()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+get\+\_\+elm (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Get the element. 
+
+\begin{DoxyReturn}{Returns}
+ElementT of element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_aa5fdef4c8dd1ecc2e9b5f3aa2f75fc14}\label{class_molecule_t_1_1_molecule_t_aa5fdef4c8dd1ecc2e9b5f3aa2f75fc14}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!get\_num@{get\_num}}
+\index{get\_num@{get\_num}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+get\+\_\+num (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Get the number of atoms in the molecule. 
+
+\begin{DoxyReturn}{Returns}
+the number of atoms of the element 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_molecule_t_1_1_molecule_t_aada229d4b4bbce21663a695b6a934643}\label{class_molecule_t_1_1_molecule_t_aada229d4b4bbce21663a695b6a934643}} 
+\index{MoleculeT.MoleculeT@{MoleculeT.MoleculeT}!num\_atoms@{num\_atoms}}
+\index{num\_atoms@{num\_atoms}!MoleculeT.MoleculeT@{MoleculeT.MoleculeT}}
+\doxysubsubsection{\texorpdfstring{num\_atoms()}{num\_atoms()}}
+{\footnotesize\ttfamily def Molecule\+T.\+Molecule\+T.\+num\+\_\+atoms (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Return the number of atom in the Molecule. 
+
+If the inputted element if the same as the \mbox{\hyperlink{class_molecule_t_1_1_molecule_t}{MoleculeT}} then return the number of atoms else 0 
+\begin{DoxyParams}{Parameters}
+{\em element} & -\/ ElementT to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of atoms or 0 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_chem_entity_1_1_chem_entity_ae23d5f4985a430666e04a88d2a9c2571}{Chem\+Entity.\+Chem\+Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_molecule_t_8py}{Molecule\+T.\+py}}\end{DoxyCompactItemize}

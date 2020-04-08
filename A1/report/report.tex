@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+
+\oddsidemargin 0mm
+\evensidemargin 0mm
+\textwidth 160mm
+\textheight 200mm
+
+\pagestyle {plain}
+\pagenumbering{arabic}
+
+\newcounter{stepnum}
+
+\title{Assignment 1 Solution}
+\author{Dhruv Bhavsar, bhavsd1}
+\date{\today}
+
+\begin {document}
+
+\maketitle
+
+This report discusses the testing results of DateT and GPosT programs written for Assignment 1. It also includes the test results of partner's code for these programs. I also discuss the quality of the given specifications and answer the given discussion questions.
+
+\section{Testing of the Original Program}
+
+Test were written in a similar format as one of the previous years'. This was the format I looked at: \url{https://gitlab.cas.mcmaster.ca/smiths/se2aa4_cs2me3/blob/master/Assignments/PreviousYears/2017/A1/A1Soln/src/testCircles.py}. Essentially, I made multiple objects with different information, for example for the DateT object, I made it to be the last day of the year, another to be the first day of the year and one to be a day in February that only occurs on a leap year. My objects helped me test edge cases. So, I would test each function written in the specification using these objects and comparing it with the actual answer with assertions. I would track the number of tests I would run and how many passed and display them at the end of the tests for DateT and GPosT. All of my test cases passed, doing testing on a program is something a good software engineer should always do. During my testing, I was able to discover a bug in my distance function where I forgot to use a previous calculated result of the latitude instead of the current latitude.
+
+
+~\newline\noindent Some of assumptions include:
+\begin{itemize}
+	\item Following the Georgian Calendar for Dates
+	\item For the \texttt{move} function, the distance entered cannot be negative
+	\item For the \texttt{arrival\_date} function, I made a couple assumptions such as the speed provided cannot be negative as it doesn't make sense. The distance also cannot be negative. I also ceiled the days for arrival because I wanted to be accurate as possible by providing them with a Date that they will reach by.
+	
+\end{itemize}
+
+
+\section{Results of Testing Partner's Code}
+
+Running my \texttt{test\_driver,py} for my partner's code gave almost a fully successfully testing but it failed the \texttt{days\_between} function. Upon further examination, I figured out that my partner adds an extra day to their calculation. I figured this out by printing out how many days are between the same day and it returned 1. From my understanding, the days between the same day is 0. However, all the other test cases passed for my partner. It seems that we both had similar assumptions and understanding of the specifications. All of my tests passed for my partner's \texttt{pos\_adt.py}.
+
+\section{Critique of Given Design Specification}
+
+The given specification was written in Natural Language, which means there is room for ambiguity if it isn't specific enough as people will have different views on it. But for the most part, I think the specification was specific enough for it to get that correct implementation. However, the specification could have been more clear on the way to implement \texttt{west\_of} and \texttt{north\_of} functions. Also the specification did not specify how it wants the state variables, so people could have done this in several different ways. Overall, natural language specifications have its advantages and disadvantages such as it is sometimes easier to understand what is needed to implement but sometimes it is not clear enough.
+
+\section{Answers to Questions}
+
+\begin{enumerate}[(a)]
+
+\item One option for the DateT is to have one state variable that is the \texttt{datetime} object instead of storing the day, month and year separately. This option would have been efficient as I would not have to keep on make new \texttt{datetime} objects for the current object to use the \texttt{datetime} functions such as \texttt{timedelta}. Another option could have been to hold the date in a string, though this would have been really inefficient as I would need to convert and match based on the day and month to its corresponding number. For GPosT, I used two state variables to store the latitude and longitude separately. Instead of doing that, another option would be to use x, y, z coordinates but this would be really hard to use the methods as the math becomes more complicated. in addition, using degrees, minutes, seconds would be a more feasible option as it is easily converted to and from latitude and longitude.
+
+\item DateT is immutable because once the constructor sets the object with the date, it is not possible to change that afterwards. The functions for DateT also don't mutate the current object, the functions create a new object and return that. But for GPosT, it is mutable because the function \texttt{move} modifies the current object based on the given parameters. Therefore, DateT is immutable and GPosT is mutable.
+
+\item The testing framework \texttt{pytest} provides a way to ensure the program behaves in a robust way. Overall, it helps writing better programs. The framework makes writing small tests easier but it can be scalable to more complex programs. For this assignment, I have not used \texttt{pytest} but in the future it can help me with scalability as future assignments will be more complex.
+
+\item One example of a past software engineering failure is Ariane 5 Flight 501. This was a new rocket that reused the same software from its predecessor, Ariane 4. Ariane 5 had to self-destruct thirty-five seconds into it's launch because of several computer failures in the engines. They were trying to cram a 64-bit number into a 16-bit size, which caused an overflow, crashing the computers onboard. They used the same software as the previous rocket without checking if it was compatible, no testing was done to make sure no software errors occurred. Ariane 5 had cost about \$8 billion to develop and it was all lost in a matter of seconds. \href{https://raygun.com/blog/costly-software-errors-history}{Source}
+
+~\newline\noindent Another example of a past software engineering failure is NASA's Mars Climate Orbiter. A sub contractor on the engineering team forgot to convert from English units to metric. This mistake costed \$125 million for such a simple conversion. This goes to show that no matter how big the project it is always important to test software thoroughly since a simple mistake can cost a lot. \href{https://raygun.com/blog/costly-software-errors-history}{Source}
+
+~\newline\noindent Software quality and high cost is still a major challenge because quality takes time and has additional costs involved. According to Wikipedia's article on \href{https://en.wikipedia.org/wiki/Project_management_triangle}{Project Management Triangle}, a software can only have two traits from quality, cost and time. The quality of work is restricted by the budget and deadline, as it takes time and money to produce quality software. I think making software open sourced is a way to address this issue, as the software can be reused and can add proprietary features afterwards. This way it will take less time to build the project and have more time to thoroughly test it, thus increasing quality of the work.
+
+\item The rational design process includes many steps similar to the waterfall method. This process is often faked because the clients who are requesting the software don't know what they want and need from the beginning, so often one goes back and forth with the specification. It is not only the specification that keeps changing, the implementation, the design, can all change during a lifecycle of the software product.  It is necessary to fake this process because it provides a clean timeline of the whole software development process as supposed to constantly moving back and forth each step. The advantages of writing documentation that follows the rational design process is that all the information about the development is organized, understandable.
+
+\item Correctness is when a software product meets the requirements specification, though this is very difficult to achieve because the specifications might be ambiguous, to measure correctness and achieve bug free software. Robustness is when the software handles what ever is thrown at it. What I mean by this is that it has an output for all input even the ones that seem unexpected or unanticipated. A correct software does not have to be robust as it satisfies the requirements, while the robustness satisfies the requirements that were not in the specification. Reliability is when the software is robust for a period of time. It also means the likelihood of it functioning correctly which can be measured. Not all programs are correct and robust but all correct programs are reliable. \href{https://gitlab.cas.mcmaster.ca/smiths/se2aa4_cs2me3/blob/master/Lectures/L03_SoftwareQuality/SoftwareQuality.pdf}{Source} 
+
+\item The principle of Separation of Concerns is to isolate different concerns and deal with them separately. Essentially, it takes a complex problem and breaks it down into smaller achievable problems. The motivation behind this principle is to enable parallelization of effort as you will be working on different tasks and trying to merge them together. The principle of Modularity and Separation of Concerns are similar because in both principles you are breaking down a complex problem into smaller easier problems. In other terms, you are looking at each part of the system separately. \href{https://gitlab.cas.mcmaster.ca/smiths/se2aa4_cs2me3/blob/master/Lectures/L05_SoftEngPrinciples/SoftEngPrinciples.pdf}{Source} 
+
+\end{enumerate}
+
+\newpage
+
+\lstset{language=Python, basicstyle=\tiny, breaklines=true, showspaces=false,
+  showstringspaces=false, breakatwhitespace=true}
+%\lstset{language=C,linewidth=.94\textwidth,xleftmargin=1.1cm}
+
+\def\thesection{\Alph{section}}
+
+\section{Code for date\_adt.py}
+
+\noindent \lstinputlisting{../src/date_adt.py}
+
+\newpage
+
+\section{Code for pos\_adt.py}
+
+\noindent \lstinputlisting{../src/pos_adt.py}
+
+\newpage
+
+\section{Code for test\_driver.py}
+
+\noindent \lstinputlisting{../src/test_driver.py}
+
+\newpage
+
+\section{Code for Partner's date\_adt.py}
+
+\noindent \lstinputlisting{../partner/date_adt.py}
+
+\newpage
+
+\section{Code for Partner's pos\_adt.py}
+
+\noindent \lstinputlisting{../partner/pos_adt.py}
+
+
+\end {document}

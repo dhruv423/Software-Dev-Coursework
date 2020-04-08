@@ -1,0 +1,160 @@
+\hypertarget{class_set_1_1_set}{}\doxysection{Set.\+Set Class Reference}
+\label{class_set_1_1_set}\index{Set.Set@{Set.Set}}
+
+
+Class that represents a \mbox{\hyperlink{class_set_1_1_set}{Set}}.  
+
+
+Inheritance diagram for Set.\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_set_1_1_set}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_set_1_1_set_a1032058254937a3b288b7d1ce67ab31a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, sequence)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the object with set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_a9aa0862d567ef6f0399f684f0dfbb7df}{add}} (self, element)
+\begin{DoxyCompactList}\small\item\em Add an element to the set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_ac0fe691bd735690d3ee4c57a0988c112}{rm}} (self, element)
+\begin{DoxyCompactList}\small\item\em Remove a specified from the set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_a66e176dd4d13f19b5b091f88c09692e6}{member}} (self, element)
+\begin{DoxyCompactList}\small\item\em Checks if the element is in the set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_aa549240dd96460fa3f208ab4c92e8c4a}{size}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the size of the set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_aedb7b35c825cb625641fe30bee8ec4f0}{equals}} (self, other\+\_\+set)
+\begin{DoxyCompactList}\small\item\em Checks if the two sets are the same. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_set_1_1_set_aa97a122b7d4a98db558714a5c4913066}{to\+\_\+seq}} (self)
+\begin{DoxyCompactList}\small\item\em Convert the set into a list for it to be iterable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a \mbox{\hyperlink{class_set_1_1_set}{Set}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_set_1_1_set_a1032058254937a3b288b7d1ce67ab31a}\label{class_set_1_1_set_a1032058254937a3b288b7d1ce67ab31a}} 
+\index{Set.Set@{Set.Set}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Set.\+Set.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sequence }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the object with set. 
+
+Takes in a sequence and converts it into set and holds it in the state variable 
+\begin{DoxyParams}{Parameters}
+{\em sequence} & -\/ Takes in a sequence (list) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_set_1_1_set_a9aa0862d567ef6f0399f684f0dfbb7df}\label{class_set_1_1_set_a9aa0862d567ef6f0399f684f0dfbb7df}} 
+\index{Set.Set@{Set.Set}!add@{add}}
+\index{add@{add}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def Set.\+Set.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Add an element to the set. 
+
+Uses the add function of set object to add the element 
+\begin{DoxyParams}{Parameters}
+{\em Element} & to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_set_1_1_set_aedb7b35c825cb625641fe30bee8ec4f0}\label{class_set_1_1_set_aedb7b35c825cb625641fe30bee8ec4f0}} 
+\index{Set.Set@{Set.Set}!equals@{equals}}
+\index{equals@{equals}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily def Set.\+Set.\+equals (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other\+\_\+set }\end{DoxyParamCaption})}
+
+
+
+Checks if the two sets are the same. 
+
+First check if the two sets are the same then check if all the elements occur in the other set 
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+set} & -\/ \mbox{\hyperlink{class_set_1_1_set}{Set}} to check with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the same else false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_equality_1_1_equality_a2ac78a997d8577962d129d1fbbae81a2}{Equality.\+Equality}}.
+
+\mbox{\Hypertarget{class_set_1_1_set_a66e176dd4d13f19b5b091f88c09692e6}\label{class_set_1_1_set_a66e176dd4d13f19b5b091f88c09692e6}} 
+\index{Set.Set@{Set.Set}!member@{member}}
+\index{member@{member}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{member()}{member()}}
+{\footnotesize\ttfamily def Set.\+Set.\+member (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Checks if the element is in the set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Element} & to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if in the set else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_1_1_set_ac0fe691bd735690d3ee4c57a0988c112}\label{class_set_1_1_set_ac0fe691bd735690d3ee4c57a0988c112}} 
+\index{Set.Set@{Set.Set}!rm@{rm}}
+\index{rm@{rm}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{rm()}{rm()}}
+{\footnotesize\ttfamily def Set.\+Set.\+rm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Remove a specified from the set. 
+
+Uses the remove function from the \mbox{\hyperlink{class_set_1_1_set}{Set}} Object 
+\begin{DoxyParams}{Parameters}
+{\em Specified} & Element \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Value\+Error} & if element not in set \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_set_1_1_set_aa549240dd96460fa3f208ab4c92e8c4a}\label{class_set_1_1_set_aa549240dd96460fa3f208ab4c92e8c4a}} 
+\index{Set.Set@{Set.Set}!size@{size}}
+\index{size@{size}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily def Set.\+Set.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the size of the set. 
+
+Using len function \begin{DoxyReturn}{Returns}
+the size of the set as an integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_set_1_1_set_aa97a122b7d4a98db558714a5c4913066}\label{class_set_1_1_set_aa97a122b7d4a98db558714a5c4913066}} 
+\index{Set.Set@{Set.Set}!to\_seq@{to\_seq}}
+\index{to\_seq@{to\_seq}!Set.Set@{Set.Set}}
+\doxysubsubsection{\texorpdfstring{to\_seq()}{to\_seq()}}
+{\footnotesize\ttfamily def Set.\+Set.\+to\+\_\+seq (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Convert the set into a list for it to be iterable. 
+
+\begin{DoxyReturn}{Returns}
+List of the sets 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_set_8py}{Set.\+py}}\end{DoxyCompactItemize}

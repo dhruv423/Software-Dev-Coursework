@@ -1,0 +1,132 @@
+\hypertarget{class_compound_t_1_1_compound_t}{}\doxysection{Compound\+T.\+CompoundT Class Reference}
+\label{class_compound_t_1_1_compound_t}\index{CompoundT.CompoundT@{CompoundT.CompoundT}}
+
+
+Class that represents a Compound, inherits Chem\+Entity and Equality.  
+
+
+Inheritance diagram for Compound\+T.\+CompoundT\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_compound_t_1_1_compound_t}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_compound_t_1_1_compound_t_aeb0cf4980897c12b80c7023505ebad30}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, molec\+\_\+set)
+\begin{DoxyCompactList}\small\item\em Constructor to initalize the object with a Molec\+Set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_compound_t_1_1_compound_t_a1486c3a6c9b122bb97e63f8a0e0d7dde}{get\+\_\+molec\+\_\+set}} (self)
+\begin{DoxyCompactList}\small\item\em Return the Compound which is a Molec\+Set. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_compound_t_1_1_compound_t_a2f9367259a81d1dbccc44f9807fc966e}{num\+\_\+atoms}} (self, element)
+\begin{DoxyCompactList}\small\item\em Return the number of atoms in the Molec\+Set with the specified element. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_compound_t_1_1_compound_t_ac6c9fd05b80b54f3f9e6a36ef23be411}{constit\+\_\+elems}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the Elm\+Set of the all the different ElementT in the compound. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_compound_t_1_1_compound_t_ab111ab29114096df5c6cee5f1f26099f}{equals}} (self, other\+\_\+compound)
+\begin{DoxyCompactList}\small\item\em Check if the two compounds are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_aa3439b5037cbe96059b9bcda3b362b71}\label{class_compound_t_1_1_compound_t_aa3439b5037cbe96059b9bcda3b362b71}} 
+def {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a Compound, inherits Chem\+Entity and Equality. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_aeb0cf4980897c12b80c7023505ebad30}\label{class_compound_t_1_1_compound_t_aeb0cf4980897c12b80c7023505ebad30}} 
+\index{CompoundT.CompoundT@{CompoundT.CompoundT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!CompoundT.CompoundT@{CompoundT.CompoundT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Compound\+T.\+Compound\+T.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{molec\+\_\+set }\end{DoxyParamCaption})}
+
+
+
+Constructor to initalize the object with a Molec\+Set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em molec\+\_\+set} & -\/ Molec\+Set to be stored in a Compound \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_ac6c9fd05b80b54f3f9e6a36ef23be411}\label{class_compound_t_1_1_compound_t_ac6c9fd05b80b54f3f9e6a36ef23be411}} 
+\index{CompoundT.CompoundT@{CompoundT.CompoundT}!constit\_elems@{constit\_elems}}
+\index{constit\_elems@{constit\_elems}!CompoundT.CompoundT@{CompoundT.CompoundT}}
+\doxysubsubsection{\texorpdfstring{constit\_elems()}{constit\_elems()}}
+{\footnotesize\ttfamily def Compound\+T.\+Compound\+T.\+constit\+\_\+elems (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the Elm\+Set of the all the different ElementT in the compound. 
+
+Using get\+\_\+elm() function for MoleculeT to get the element \begin{DoxyReturn}{Returns}
+Elm\+Set of all the ElementT 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_chem_entity_1_1_chem_entity}{Chem\+Entity.\+Chem\+Entity}}.
+
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_ab111ab29114096df5c6cee5f1f26099f}\label{class_compound_t_1_1_compound_t_ab111ab29114096df5c6cee5f1f26099f}} 
+\index{CompoundT.CompoundT@{CompoundT.CompoundT}!equals@{equals}}
+\index{equals@{equals}!CompoundT.CompoundT@{CompoundT.CompoundT}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily def Compound\+T.\+Compound\+T.\+equals (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other\+\_\+compound }\end{DoxyParamCaption})}
+
+
+
+Check if the two compounds are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+compound} & -\/ other compound to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal else false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_equality_1_1_equality_a2ac78a997d8577962d129d1fbbae81a2}{Equality.\+Equality}}.
+
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_a1486c3a6c9b122bb97e63f8a0e0d7dde}\label{class_compound_t_1_1_compound_t_a1486c3a6c9b122bb97e63f8a0e0d7dde}} 
+\index{CompoundT.CompoundT@{CompoundT.CompoundT}!get\_molec\_set@{get\_molec\_set}}
+\index{get\_molec\_set@{get\_molec\_set}!CompoundT.CompoundT@{CompoundT.CompoundT}}
+\doxysubsubsection{\texorpdfstring{get\_molec\_set()}{get\_molec\_set()}}
+{\footnotesize\ttfamily def Compound\+T.\+Compound\+T.\+get\+\_\+molec\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the Compound which is a Molec\+Set. 
+
+\begin{DoxyReturn}{Returns}
+Molec\+Set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_compound_t_1_1_compound_t_a2f9367259a81d1dbccc44f9807fc966e}\label{class_compound_t_1_1_compound_t_a2f9367259a81d1dbccc44f9807fc966e}} 
+\index{CompoundT.CompoundT@{CompoundT.CompoundT}!num\_atoms@{num\_atoms}}
+\index{num\_atoms@{num\_atoms}!CompoundT.CompoundT@{CompoundT.CompoundT}}
+\doxysubsubsection{\texorpdfstring{num\_atoms()}{num\_atoms()}}
+{\footnotesize\ttfamily def Compound\+T.\+Compound\+T.\+num\+\_\+atoms (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Return the number of atoms in the Molec\+Set with the specified element. 
+
+Using functional programming functions, turn the Molec\+Set into a sequence to iterate over and find the number of atoms for each Molec\+Set with a specified element then sum up the list 
+\begin{DoxyParams}{Parameters}
+{\em element} & -\/ ElementT \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total number of atoms of element in the Compound 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_chem_entity_1_1_chem_entity_ae23d5f4985a430666e04a88d2a9c2571}{Chem\+Entity.\+Chem\+Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_compound_t_8py}{Compound\+T.\+py}}\end{DoxyCompactItemize}

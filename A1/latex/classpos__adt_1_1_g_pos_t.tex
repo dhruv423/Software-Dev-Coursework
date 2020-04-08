@@ -1,0 +1,189 @@
+\hypertarget{classpos__adt_1_1_g_pos_t}{}\doxysection{pos\+\_\+adt.\+G\+PosT Class Reference}
+\label{classpos__adt_1_1_g_pos_t}\index{pos\_adt.GPosT@{pos\_adt.GPosT}}
+
+
+An A\+DT that represents global position coordinates.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a71ed98487111c495dc30dc3010d53a7c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, latitude, longitude)
+\begin{DoxyCompactList}\small\item\em Constructor that creates a new \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object with latitude and longitude (in degrees) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a38ebb93f1947c482a4a856b353eb6564}{lat}} (self)
+\begin{DoxyCompactList}\small\item\em Getter for latitude. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a21b24abea9fca9f97d7af6be1509edc6}{long}} (self)
+\begin{DoxyCompactList}\small\item\em Getter for longitude. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a89baaed8a97b6b3eeba5aeea866c888e}{west\+\_\+of}} (self, p)
+\begin{DoxyCompactList}\small\item\em Checks if current position is west of parameter position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_adb5cfeefc3c133895289d3507e7a14f7}{north\+\_\+of}} (self, p)
+\begin{DoxyCompactList}\small\item\em Checks if current position is north of parameter position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a07040d59fe466b24738749cf40c6a965}{equal}} (self, p)
+\begin{DoxyCompactList}\small\item\em Checks if the distance is equal by calculating the distance. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_ac073f4ce8d6a10a6325c5f667ea0c2a3}{move}} (self, b, d)
+\begin{DoxyCompactList}\small\item\em Moves the current object d (km) towards b (bearing) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_ad09472793d0194e188f76679af84e734}{distance}} (self, p)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between current position and position p. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classpos__adt_1_1_g_pos_t_a5a92fc2c750bc5fda289e7fbfb98bdf6}{arrival\+\_\+date}} (self, p, d, s)
+\begin{DoxyCompactList}\small\item\em Calculate the arrival date starting from the current position and traveling towards position p at s kilometers per day. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a19ae4202f2a6af3254b2abaad4690099}\label{classpos__adt_1_1_g_pos_t_a19ae4202f2a6af3254b2abaad4690099}} 
+{\bfseries latitude}
+\item 
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a35dc89c743bfff89aa29d0ca893b44e4}\label{classpos__adt_1_1_g_pos_t_a35dc89c743bfff89aa29d0ca893b44e4}} 
+{\bfseries longitude}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+DT that represents global position coordinates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a71ed98487111c495dc30dc3010d53a7c}\label{classpos__adt_1_1_g_pos_t_a71ed98487111c495dc30dc3010d53a7c}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{latitude,  }\item[{}]{longitude }\end{DoxyParamCaption})}
+
+
+
+Constructor that creates a new \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object with latitude and longitude (in degrees) 
+
+First check if latitude and longitude are in range then save them to the class variables else throw value error 
+\begin{DoxyParams}{Parameters}
+{\em latitude} & and longitude (in degrees) are real numbers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a5a92fc2c750bc5fda289e7fbfb98bdf6}\label{classpos__adt_1_1_g_pos_t_a5a92fc2c750bc5fda289e7fbfb98bdf6}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!arrival\_date@{arrival\_date}}
+\index{arrival\_date@{arrival\_date}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{arrival\_date()}{arrival\_date()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+arrival\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p,  }\item[{}]{d,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+
+
+Calculate the arrival date starting from the current position and traveling towards position p at s kilometers per day. 
+
+First calculate the distance between current position and desired position (p), then divide the distance by s to get days it takes to reach that position. Finally use the DateT method add\+\_\+days to add the days needed to travel the distance. The reason I took the ceil of days is because I want to give the date that they will reach the position by. Also, it doesnt make sense to input a negative speed in this case. \mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_ad09472793d0194e188f76679af84e734}\label{classpos__adt_1_1_g_pos_t_ad09472793d0194e188f76679af84e734}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!distance@{distance}}
+\index{distance@{distance}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+distance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Calculate the distance between current position and position p. 
+
+Using the formula provided in the specifications \href{https://www.movable-type.co.uk/scripts/latlong.html}{\texttt{ https\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}} under Distance 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object that we are finding the distance between \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance in kilometers between the two positions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a07040d59fe466b24738749cf40c6a965}\label{classpos__adt_1_1_g_pos_t_a07040d59fe466b24738749cf40c6a965}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!equal@{equal}}
+\index{equal@{equal}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+equal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Checks if the distance is equal by calculating the distance. 
+
+Using the formula provided in specifications \href{https://www.movable-type.co.uk/scripts/latlong.html}{\texttt{ https\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}} 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object comparing with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the distance is less than 1 km else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a38ebb93f1947c482a4a856b353eb6564}\label{classpos__adt_1_1_g_pos_t_a38ebb93f1947c482a4a856b353eb6564}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!lat@{lat}}
+\index{lat@{lat}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{lat()}{lat()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+lat (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter for latitude. 
+
+\begin{DoxyReturn}{Returns}
+the latitude as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a21b24abea9fca9f97d7af6be1509edc6}\label{classpos__adt_1_1_g_pos_t_a21b24abea9fca9f97d7af6be1509edc6}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!long@{long}}
+\index{long@{long}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{long()}{long()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+long (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Getter for longitude. 
+
+\begin{DoxyReturn}{Returns}
+the longitude as a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_ac073f4ce8d6a10a6325c5f667ea0c2a3}\label{classpos__adt_1_1_g_pos_t_ac073f4ce8d6a10a6325c5f667ea0c2a3}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!move@{move}}
+\index{move@{move}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{b,  }\item[{}]{d }\end{DoxyParamCaption})}
+
+
+
+Moves the current object d (km) towards b (bearing) 
+
+Using the formula provided in the specifications \href{https://www.movable-type.co.uk/scripts/latlong.html}{\texttt{ https\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}} under Destination point given distance and bearing from start point then the new position gets updated to be the current. Firstly convert all degrees into radians as the formula requires radians. Also I check if the new positions are greater than their ranges, if so then I apply a formula to normalize them which can be found from the website given in the specifications \href{https://www.movable-type.co.uk/scripts/latlong.html}{\texttt{ https\+://www.\+movable-\/type.\+co.\+uk/scripts/latlong.\+html}} 
+\begin{DoxyParams}{Parameters}
+{\em b} & -\/ bearing type real and d -\/ distance in km type real \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_adb5cfeefc3c133895289d3507e7a14f7}\label{classpos__adt_1_1_g_pos_t_adb5cfeefc3c133895289d3507e7a14f7}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!north\_of@{north\_of}}
+\index{north\_of@{north\_of}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{north\_of()}{north\_of()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+north\+\_\+of (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Checks if current position is north of parameter position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object which you are comparing with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current position is north of parameter position else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpos__adt_1_1_g_pos_t_a89baaed8a97b6b3eeba5aeea866c888e}\label{classpos__adt_1_1_g_pos_t_a89baaed8a97b6b3eeba5aeea866c888e}} 
+\index{pos\_adt.GPosT@{pos\_adt.GPosT}!west\_of@{west\_of}}
+\index{west\_of@{west\_of}!pos\_adt.GPosT@{pos\_adt.GPosT}}
+\doxysubsubsection{\texorpdfstring{west\_of()}{west\_of()}}
+{\footnotesize\ttfamily def pos\+\_\+adt.\+G\+Pos\+T.\+west\+\_\+of (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Checks if current position is west of parameter position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ \mbox{\hyperlink{classpos__adt_1_1_g_pos_t}{G\+PosT}} object which you are comparing with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current position is west of parameter position else False 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{pos__adt_8py}{pos\+\_\+adt.\+py}}\end{DoxyCompactItemize}

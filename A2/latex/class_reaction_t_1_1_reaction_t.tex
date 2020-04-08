@@ -1,0 +1,128 @@
+\hypertarget{class_reaction_t_1_1_reaction_t}{}\doxysection{Reaction\+T.\+ReactionT Class Reference}
+\label{class_reaction_t_1_1_reaction_t}\index{ReactionT.ReactionT@{ReactionT.ReactionT}}
+
+
+Class to simulate a reaction with balancing the equation.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a3b0271d7e66c20a31ec7df04ce252835}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, left\+\_\+compound, right\+\_\+compound)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}} which balances before storing it. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a213bd60080299154415e880ef1710153}{get\+\_\+lhs}} (self)
+\begin{DoxyCompactList}\small\item\em Return the left hand side of \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a49edafaaffa6fde8e65ee46e7359ed76}{get\+\_\+rhs}} (self)
+\begin{DoxyCompactList}\small\item\em Return the right hand side of \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a8510da0426a1ec9f91e9bd16485f8241}{get\+\_\+lhs\+\_\+coeff}} (self)
+\begin{DoxyCompactList}\small\item\em Return the coeffs for the left side. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a037e1c31b791dd4851ba328f93743a38}{get\+\_\+rhs\+\_\+coeff}} (self)
+\begin{DoxyCompactList}\small\item\em Return the coeffs for the right side. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_reaction_t_1_1_reaction_t_a3b9389c127cf474afc64fa1928fdcf2e}{\+\_\+\+\_\+elm\+\_\+in\+\_\+chem\+\_\+eq\+\_\+\+\_\+}} (self, c)
+\begin{DoxyCompactList}\small\item\em Return the ElementT in the compound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_ad99279ca5250e2929e8c74a39bfb42a2}\label{class_reaction_t_1_1_reaction_t_ad99279ca5250e2929e8c74a39bfb42a2}} 
+def {\bfseries \+\_\+\+\_\+calc\+\_\+coeffs\+\_\+\+\_\+} (self, left\+\_\+compound, right\+\_\+compound)
+\item 
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_ae75de43aef3cf512e5da0e4a2eff9977}\label{class_reaction_t_1_1_reaction_t_ae75de43aef3cf512e5da0e4a2eff9977}} 
+def {\bfseries \+\_\+\+\_\+n\+\_\+atoms\+\_\+\+\_\+} (self, comp, c, element)
+\item 
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_adec89663608ab0d5dce254363ed56e22}\label{class_reaction_t_1_1_reaction_t_adec89663608ab0d5dce254363ed56e22}} 
+def {\bfseries \+\_\+\+\_\+is\+\_\+bal\+\_\+elm\+\_\+\+\_\+} (self, left\+\_\+comp, right\+\_\+comp, left\+\_\+coef, right\+\_\+coef, element)
+\item 
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a1a2246b3a3fc2f3fd707a77f20df4cbd}\label{class_reaction_t_1_1_reaction_t_a1a2246b3a3fc2f3fd707a77f20df4cbd}} 
+def {\bfseries \+\_\+\+\_\+is\+\_\+balanced\+\_\+\+\_\+} (self, left\+\_\+comp, right\+\_\+comp, left\+\_\+coef, right\+\_\+coef)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to simulate a reaction with balancing the equation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a3b0271d7e66c20a31ec7df04ce252835}\label{class_reaction_t_1_1_reaction_t_a3b0271d7e66c20a31ec7df04ce252835}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left\+\_\+compound,  }\item[{}]{right\+\_\+compound }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}} which balances before storing it. 
+
+Uses local functions to calculate the coeffs, then check if it is balanced else throw Value Error The reason I dont check for positive coeffs is because I make them positive in the calculation of coeffs 
+\begin{DoxyParams}{Parameters}
+{\em left\+\_\+compound} & -\/ CompoundT right\+\_\+compound -\/ CompoundT \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a3b9389c127cf474afc64fa1928fdcf2e}\label{class_reaction_t_1_1_reaction_t_a3b9389c127cf474afc64fa1928fdcf2e}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!\_\_elm\_in\_chem\_eq\_\_@{\_\_elm\_in\_chem\_eq\_\_}}
+\index{\_\_elm\_in\_chem\_eq\_\_@{\_\_elm\_in\_chem\_eq\_\_}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{\_\_elm\_in\_chem\_eq\_\_()}{\_\_elm\_in\_chem\_eq\_\_()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+\_\+\+\_\+elm\+\_\+in\+\_\+chem\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Return the ElementT in the compound. 
+
+\begin{DoxyReturn}{Returns}
+Elm\+Set of elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a213bd60080299154415e880ef1710153}\label{class_reaction_t_1_1_reaction_t_a213bd60080299154415e880ef1710153}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!get\_lhs@{get\_lhs}}
+\index{get\_lhs@{get\_lhs}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{get\_lhs()}{get\_lhs()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+get\+\_\+lhs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the left hand side of \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}}. 
+
+\begin{DoxyReturn}{Returns}
+the left side CompoundT 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a8510da0426a1ec9f91e9bd16485f8241}\label{class_reaction_t_1_1_reaction_t_a8510da0426a1ec9f91e9bd16485f8241}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!get\_lhs\_coeff@{get\_lhs\_coeff}}
+\index{get\_lhs\_coeff@{get\_lhs\_coeff}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{get\_lhs\_coeff()}{get\_lhs\_coeff()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+get\+\_\+lhs\+\_\+coeff (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the coeffs for the left side. 
+
+\begin{DoxyReturn}{Returns}
+list of coeffs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a49edafaaffa6fde8e65ee46e7359ed76}\label{class_reaction_t_1_1_reaction_t_a49edafaaffa6fde8e65ee46e7359ed76}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!get\_rhs@{get\_rhs}}
+\index{get\_rhs@{get\_rhs}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{get\_rhs()}{get\_rhs()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+get\+\_\+rhs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the right hand side of \mbox{\hyperlink{class_reaction_t_1_1_reaction_t}{ReactionT}}. 
+
+\begin{DoxyReturn}{Returns}
+the right side CompoundT 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reaction_t_1_1_reaction_t_a037e1c31b791dd4851ba328f93743a38}\label{class_reaction_t_1_1_reaction_t_a037e1c31b791dd4851ba328f93743a38}} 
+\index{ReactionT.ReactionT@{ReactionT.ReactionT}!get\_rhs\_coeff@{get\_rhs\_coeff}}
+\index{get\_rhs\_coeff@{get\_rhs\_coeff}!ReactionT.ReactionT@{ReactionT.ReactionT}}
+\doxysubsubsection{\texorpdfstring{get\_rhs\_coeff()}{get\_rhs\_coeff()}}
+{\footnotesize\ttfamily def Reaction\+T.\+Reaction\+T.\+get\+\_\+rhs\+\_\+coeff (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the coeffs for the right side. 
+
+\begin{DoxyReturn}{Returns}
+list of coeffs 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_reaction_t_8py}{Reaction\+T.\+py}}\end{DoxyCompactItemize}
